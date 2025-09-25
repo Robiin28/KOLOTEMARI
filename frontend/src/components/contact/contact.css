@@ -1,0 +1,165 @@
+.contacts {
+  padding: 60px 30px; /* Adjust padding for better spacing */
+  background-color: #f9f9f9; 
+}
+
+.contacts .container {
+  max-width: 1200px; /* Max width for large screens */
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: nowrap; /* No wrapping, keep items in a row */
+  background: #fff; 
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Enhanced shadow for the container */
+}
+
+.mapContainer {
+  flex: 1; /* Allow the map to take available space */
+}
+
+.contacts .map {
+  width: 100%; /* Use full width */
+  height: 450px; /* Fixed height for the map */
+  border: 0;
+  border-radius: 10px; /* Rounded corners for iframe */
+}
+
+.rightContact {
+  padding: 40px;
+  flex: 1; /* Allow the right section to take available space */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contacts h1 {
+  font-size: 28px; /* Adjusted font size */
+  font-weight: 500; /* Slightly bolder text */
+  color: #333; 
+  margin-top: 0;
+}
+
+.contacts p {
+  font-size: 18px; /* Slightly larger font size */
+  color: #666; /* Lighter color for paragraph */
+  margin-bottom: 10px; /* Spacing below paragraph */
+}
+
+.contacts .items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Increased gap for better spacing */
+}
+
+.contacts .box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for boxes */
+}
+
+.contacts .box h4 {
+  font-size: 16px;
+  color: #f7880a;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.contacts .box p {
+  font-size: 15px;
+  color: #666;
+}
+
+/* Form */
+.contacts form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Space between form elements */
+}
+
+.contacts input,
+.contacts textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd; /* Lighter border color */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Adjusted font size */
+  transition: border-color 0.3s; /* Smooth transition */
+}
+
+.contacts input:focus,
+.contacts textarea:focus {
+  border-color: #ec6c04; /* Change border color on focus */
+}
+
+.contacts textarea {
+  resize: vertical; /* Allow vertical resizing only */
+}
+
+.contacts button.primary-btn {
+  padding: 15px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #ec6c04;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.contacts button.primary-btn:hover {
+  background-color: #0d0e0d;
+  transform: translateY(-2px); 
+}
+
+/* Follow Us */
+.contacts h3 {
+  margin-top: 30px;
+  font-size: 20px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Social Media Icons */
+.contacts .headContact {
+  text-align: end;
+  margin-right: 15vh;
+  font-size: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px; 
+}
+
+.social-icons a {
+  color: #f0850a; /* Default color for icons */
+  font-size: 25px; 
+  transition: color 0.3s, transform 0.3s; /* Smooth color transition and scaling effect */
+}
+
+.social-icons a:hover {
+  color: #0c0c0c; /* Hover color for icons */
+  transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .contacts .container {
+      flex-direction: column; /* Stack on small screens */
+      padding: 20px; /* Adjusted padding */
+  }
+
+  .contacts .map {
+      height: 50vh; /* Adjust height for smaller screens */
+  }
+
+  .contacts .rightContact {
+      padding: 20px; /* Adjust padding for the right section */
+  }
+
+  .contacts .row {
+      width: 100%;
+  }
+}

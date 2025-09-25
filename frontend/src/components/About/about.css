@@ -1,0 +1,275 @@
+
+
+.about {
+  position: relative;
+  max-width: 1200px; 
+  margin: 20px auto; 
+  padding: 28px; 
+  background-color: #f9f9f9;
+  border-radius: 8px; 
+  line-height: 1.6;
+}
+
+.about h1 {
+  font-size: 2.9em;
+  color: #333; 
+  margin-bottom: 20px; 
+  text-align:left;
+}
+
+.about p {
+  font-size: 1.3em; 
+  color: #555; 
+  margin-bottom: 20px; 
+  margin-left: 20px;
+  text-align: justify; 
+}
+
+.about br {
+  margin-bottom: 10px; 
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 15px; 
+  }
+
+  .about h1 {
+    font-size: 2em; 
+  }
+
+  .about p {
+    font-size: 1em; 
+  }
+}
+
+
+/*  */
+.aboutHomes {
+  height: auto;
+ display: flex;
+
+}
+.aboutHomes #heading {
+  text-align: left;
+  padding: 0;
+}
+.aboutHomes .left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.aboutHomes .rights {
+  padding: 80px 50px;
+}
+.aboutHomes .items {
+  margin-top: 50px;
+}
+.aboutHomes .item {
+  background-color: #fff;
+  margin-top: 30px;
+  padding: 20px;
+  transition: 0.5s;
+}
+.aboutHomes .img {
+  width: 200px;
+}
+.aboutHomes img {
+  width: 70px;
+  height: 70px;
+}
+.aboutHomes .item h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.aboutHomes .item p {
+  color: #999999;
+}
+.aboutHomes .item:hover {
+  background-color: #d15806;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
+}
+.aboutHomes .item:hover p {
+  color: #fff;
+}
+/*----------awrapper------------*/
+.awrapper {
+  background-image: url("../../../public/image/students.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  color: #fff;
+}
+.awrapper .box {
+  padding: 50px 0;
+}
+.awrapper img {
+  margin-right: 10px;
+}
+.awrapper h1 {
+  font-size: 50px;
+}
+.awrapper h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+/*----------awrapper------------*/
+@media screen and (max-width: 768px) {
+  .aboutHome .container {
+    flex-direction: column-reverse;
+  }
+  .aboutHome .row {
+    width: 100%;
+  }
+
+}
+  .awrapper {
+    display: grid;
+
+    height: 36vh;
+  }
+  
+  .awrapper .boxWrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    border: 0.1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .awrapper .boxn {
+    padding: 20px;
+    background-color: transparent;
+    margin-bottom: 40px;
+    margin:auto;
+  }
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .featured-courses {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .featured-courses-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .course-container {
+    position: relative;
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .course {
+    margin-bottom: 1rem;
+  }
+  
+  .course-category {
+    font-size: medium;
+    opacity: 0.5;
+  }
+  
+  .course-title {
+    margin: 0.5rem 0;
+  }
+  
+  .course-divider {
+    color: rgb(254, 254, 254);
+    width: 90%;
+  }
+  
+  .course-duration {
+    font-size: smaller;
+  }
+  
+  .course-price {
+    font-weight: 500;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .course-container:hover .overlay {
+    display: flex;
+  }
+  
+  .overlay-content {
+    padding: 1rem;
+  }
+  
+  .overlay-instructor,
+  .course-name,
+  .overlay-description {
+    margin-bottom: 0.5rem;
+  }
+  
+  .overlay-details {
+    padding-bottom: 1rem;
+  }
+  
+  .icon-spacer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .review-button {
+    border-radius: 0;
+    width: 55%;
+  }
+  
+  .overlay-actions {
+    padding-top: 1rem;
+  }
+  
+  .load-more-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .load-more-button {
+    margin: 0.5rem 1rem;
+    border-radius: 0;
+    width: 16%;
+  }
+  
+  .social-share {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .share-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  

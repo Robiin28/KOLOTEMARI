@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,800;0,900;1,100;1,200;1,800;1,900&display=swap");
+
+
+:root {
+    --primaryBackground: #fff;
+    --secondaryBackground:#1a1919;
+    --third:#865d3d;
+    --primaryColor: #1eb2a6;
+    --secondaryColor:#000;
+    --iconFirstColor:#ffffff4d;
+    --iconSecondColor:#0bb119;
+    --white: #fff;
+    --black: #0a21c0;
+    
+  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+
+  background-color: var(--primaryBackground);
+}
+.container{
+    max-width:85%;
+    margin: auto;
+}
+
+.flexSB{
+    display:flex;
+    justify-content: space-between;
+}
+.icon{
+    width: 40px;
+    height:40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: transparent;
+    color:var(--iconSecondColor);
+    transition:0.5s
+}
+.icon:hover{
+    cursor: pointer;
+    background-color:var(--iconFirstColor);
+    color:white;
+}
+a{
+    text-decoration: none;
+}
+li{
+    letter-spacing: none;
+}
+button {
+     padding: 17px 30px;
+    background-color: #fff;
+    color:var(--secondaryColor);
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0 24px 36px -11px rgb(0 0 0 / 9%);
+    transition: 0.5s;
+    border-radius: 30px;
+   
+  }
+  button i {
+    margin-left: 20px;
+  }
+  button:hover {
+    box-shadow: none;
+  }
+@media screen and (max-width: 768px) {
+    .icon{
+        
+        width:20px;
+        height:20px;
+  
+        
+    }
+    .icon:hover{
+        background-color:transparent;
+        color:var(--iconSecondColor);
+        transform: scale(1.5);
+    }
+}

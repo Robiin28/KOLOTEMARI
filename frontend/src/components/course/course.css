@@ -1,0 +1,452 @@
+.courses-Table {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    width: 18%; 
+    border: 1px solid #ddd; 
+    margin: 60px 40px 0; 
+    border-top: 8px solid rgb(231, 117, 10);
+    background-color: transparent; 
+}
+
+.course-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto;
+    width: 80%;
+}
+
+.search-bars {
+    display: flex;
+    align-items: center; 
+}
+
+.search-inputs {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.search-button {
+    padding: 10px 10px;
+    border: none;
+    background-color: rgb(233, 107, 3);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: orangered;
+}
+
+.sort-section {
+    display: flex;
+    align-items: center;
+}
+
+.sort-label {
+    margin-right: 10px;
+}
+
+.sort-select {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.bottomCourse {
+    display: flex;
+    flex-direction: column;
+}
+.checkbox-group,
+.status,
+.level,
+.rating,
+.instructors,
+.price {
+    margin-bottom: 0px; /* Spacing between sections */
+    padding: 0 10px;
+}
+
+.checkbox-group button,
+.status button,
+.level button,
+.rating button,
+.instructors button,
+.price button {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 0;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    margin: 5px 0;
+}
+
+.checkbox-group button:hover,
+.status button:hover,
+.level button:hover,
+.rating button:hover,
+.instructors button:hover,
+.price button:hover {
+    background-color: #e0e0e0; /* Darker shade on hover */
+}
+
+.checkbox-group label,
+.status label,
+.level label,
+.rating label,
+.instructors label,
+.price label {
+    display: block; 
+    margin: 5px 0; 
+    margin-left: 20px;
+}
+
+.show-results {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.show-results-button {
+    padding: 10px 15px;
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 18px;
+    margin-bottom: 2vh;
+}
+
+.reset-link {
+    align-self: center;
+    color: red;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-right: 18px;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.reset-link:hover {
+    color: darkred; /* Darker red on hover */
+}
+
+.right {
+    border-top: 8px solid orange;
+    position: absolute;
+    top: 46vh;
+    right: 20vh;
+    width: 60%;
+    flex: 1;
+}
+ .courseImage {
+width:100%;
+aspect-ratio: 1;
+}
+.social-share {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+.course{
+    z-index: 1;
+}
+.course-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.course-container {
+    position: relative; 
+    transition: transform 0.3s ease; 
+    overflow: visible; 
+    z-index: 1;
+ 
+}
+
+
+
+.overlayCourse {
+    width: 380px; 
+    background-color: white; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+  
+    position: absolute; 
+    z-index: 999; 
+    top: 50%; 
+    left: 47%; 
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease; 
+    opacity: 0; 
+    padding: 40px;
+}
+.course-container:hover .overlay {
+    opacity: 1; 
+}
+.overlay-button {
+    margin-top: 1vh; 
+}
+
+.overlayCourse .review-button {
+    padding: 10px 15px;
+    width: 100%;
+    background-color: rgb(233, 107, 3);
+    color: white;
+    font-size: 13px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.review-button:hover {
+    background-color: orangered; 
+}
+.icon-spacer {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+.overlay-instructor {
+    color:black;
+}
+.overlay .overlay-description{
+padding:10px;
+ color:black;
+} 
+.overlay .overlay-details .icon-spacer{
+    color:orange;
+    margin-top: 12vh;
+}
+.maps{
+    margin-right: 25px;
+}
+.overlay-actions{
+    color:black;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.overlay-actions .wishlist{
+    margin-right: 25px;
+
+}
+
+
+
+/*  */
+
+/* course.css */
+
+/* Container for the course cards */
+.coursesCard {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+/* Grid layout for the course cards */
+.container.grid2 {
+  display: grid;
+  padding: 10vh 0;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+ justify-content: center;
+}
+
+/* Individual course card items */
+.courseItems {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);  
+  padding:20vh 30px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Ensure items take full height */
+}
+
+.courseItems:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Flex layout for content inside course cards */
+.content.flex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Image container */
+.left .img {
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.left .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Course text content */
+.textCourse {
+  flex-grow: 1;
+}
+
+.textCourse h1 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.rate {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.rate i {
+  color: #ffd700;
+  margin-right: 3px;
+}
+
+.rate label {
+  margin-left: 8px;
+  color: #666;
+}
+
+/* Details section */
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.details .box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px; /* Space between teacher and lecture details */
+}
+
+.dimg {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.dimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.para h4 {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+
+.details span {
+  margin-top: 8px; /* Add margin-top to separate from other details */
+}
+
+/* Price section */
+.price {
+  text-align: center;
+  margin-top: auto; /* Ensures price section sticks to the bottom */
+  margin-bottom: 10px; /* Add some space between price and button */
+}
+
+.price h3 {
+  font-size: 18px;
+  color: #333;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Enroll button */
+.outline-btn {
+  background: transparent;
+  border: 2px solid #333;
+  padding: 12px 24px;
+  border-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.outline-btn:hover {
+  background: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .coursesCard {
+    padding: 20px 10px;
+  }
+
+  .content.flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .left .img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+  }
+
+  .text h1 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .rate {
+    margin-bottom: 8px;
+  }
+
+  .details {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .details .box {
+    margin-bottom: 8px;
+  }
+
+  .price h3 {
+    font-size: 16px;
+  }
+
+  .outline-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}

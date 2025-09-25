@@ -1,0 +1,84 @@
+/* Price Section */
+.price {
+    padding: 50px 0; /* Add padding to the top and bottom */
+    background-color: transparent; /* Light background for contrast */
+  }
+  
+  .price .container {
+    max-width: 1200px; /* Adjust the max-width for a better layout on large screens */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4-column grid */
+    gap: 30px; /* Space between grid items */
+  }
+  
+  /* Pricing Card */
+  .price .items {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Enhanced shadow for better separation */
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .price .items:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .price h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px; /* Reduced margin for better alignment */
+    font-weight: 600;
+  }
+  
+  .price h1 {
+    height: 120px;
+    width: 120px;
+    background-color: rgba(197, 90, 18, 0.925);
+    border-radius: 50%;
+    font-size: 40px;
+    margin: 20px auto; /* Centered the element horizontally */
+    color: #f6f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centered text vertically */
+  }
+  
+  .price h1 span {
+    font-size: 24px;
+    color: #15ee5d;
+  }
+  
+  .price p {
+    color: #666;
+    margin: 10px 0; /* Reduced margin for better alignment */
+    font-size: 16px;
+  }
+  
+  .price .outline-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid rgba(197, 90, 18, 0.925);
+    color: rgba(197, 90, 18, 0.925);
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin:none;
+    margin-top: 20px;
+    justify-content: center;
+
+  }
+  
+  .price .outline-btn:hover {
+    background-color: rgba(197, 90, 18, 0.925);
+    color: #fff;
+  }
+  

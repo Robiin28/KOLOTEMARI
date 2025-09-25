@@ -1,0 +1,243 @@
+
+.head {
+  padding: 20px 0;
+  color: var(--secondaryColor);
+  height:60px;
+  width: 100%;
+}
+.logo h1 {
+  position: absolute;
+  top:23px;
+  left: 79px;
+  font-size: 15px;
+  font-weight: 800;
+}
+.container .logo .logoImage {
+  position: absolute;
+  top: 23px;
+  left: 40px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.logo .spam {
+  position: absolute;
+  top: 39px;
+  left: 75px;
+  font-size: 10px;
+  font-weight: 400;
+}
+.head .icon {
+  margin-left: 18px;
+  color: black;
+}
+.social {
+  color: black;
+  position: absolute;
+  right:45lvh;
+  top:16px;
+}
+header {
+  background-color:black;
+  color:white;
+  z-index: 999;
+}
+header .nav {
+  position: sticky;
+  display: flex;
+}
+header li {
+  margin-right: 40px;
+  
+}
+header ul {
+  padding: 30px 20px;
+  list-style: none;
+  z-index: 999;
+  
+}
+
+header ul li a {
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  transition: 0.5s;
+  
+}
+header ul li a:hover {
+  text-decoration: underline;
+ 
+}
+header .flexSB{
+  height: 80px;
+  z-index: 1;
+}
+.start {
+  background-color: #ad5106;
+  padding: 30px 70px;
+  color: var(--white);
+  border-radius: 0 0 60px;
+}
+.toggle {
+  display: none;
+}
+.mobile-nav {
+
+ 
+  position: absolute;
+  top: 11vh;
+  left: 0;
+  width: 70%;
+  padding: 40px 8px;
+ padding-left:0 ;
+  height: 100lvh;
+  background-color:rgb(204, 91, 11);
+  z-index: 1;
+}
+
+.search-container {
+  position: absolute;
+  top:16px;
+  left:59lvh;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 10px;
+  width:100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding-right: 30px;
+  border-radius: 18PX;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ccc;
+}
+.search-input:focus {
+  border-color: #1eb2a6;
+  box-shadow: 0 0 5px rgba(30, 178, 166, 0.5); 
+  outline: none;
+}
+.action-btn{
+  position: absolute;
+  top:15px;
+  right:16lvh;
+}
+.action-btn .loginBtn{
+ border-radius: 0;
+ border:1px solid grey;
+ padding:10px 15px;
+ }
+ .action-btn .signUpBtn{
+  border-radius: 0;
+  border:1px solid grey;
+  background-color: #1c1b1b;
+  color: white;
+  padding:10px 15px;
+  margin-left: 10px;
+  }
+  .action-btn .loginBtn:hover{
+    background-color: rgb(166, 160, 160);
+  }
+  .action-btn .signUpBtn:hover{
+    background-color: #6d6969;
+  }
+
+@media screen and (max-width: 768px) {
+  .container .logo .logoImage {
+    left: 5px;
+  }
+  .search-container{
+   width:88%;
+   top:58vh;
+   left:4vh;
+  }
+  .head {
+    height: 70px;
+  }
+
+  .logo h1 {
+    font-size: 13px;
+    left: 37px;
+  }
+  .logo .spam {
+    font-size: 10px;
+    font-weight: 400;
+    left: 37px;
+    height: 30px;
+  }
+  .social {
+    display: none;
+  }
+  .start {
+    padding: 30px 30px;
+    clip-path: none;
+  }
+  .action-btn {
+    position: absolute;
+    top: 2vh;
+    right:2vh;
+    padding:0;
+  }
+  .loginBtn {
+    position: absolute;
+    top: 2vh;
+    right: 50px;
+    display: none;
+   
+  }
+  .log li{
+    display: none;
+  }
+  header {
+    margin: 0;
+    position: relative;
+  }
+  header ul.flexSB {
+    display: none;
+  }
+  header ul li {
+    margin: 10px 10px;
+    padding: 10px;
+  }
+  header ul li:hover {
+    background-color: var(--white);
+    color: var(--secondaryColor);
+    border-radius: 20px;
+  }
+  header ul li a:hover {
+    color: var(--secondaryColor);
+  }
+  .toggle {
+    border: none;
+    display: block;
+    background-color: transparent;
+    padding: 0;
+    font-weight: 40;
+    color: rgb(17, 16, 16);
+    font-size: 30px;
+    position: fixed;
+    right: 12px;
+display: flex;
+justify-content: center;
+    
+  }
+ 
+  header ul li a {
+    color: var(--secondaryColor);
+    font-weight: 300;
+    transition: 0.5s;
+  }
+  header ul li a:hover {
+    color: #1eb2a6;
+    text-decoration: none;
+  }
+  .social i:hover {
+    background-color: none;
+  }
+}
